@@ -1,0 +1,22 @@
+{
+  "name": "labelmaker",
+  "version": "1.0.0",
+  "description": "Prints labels from MQTT input using predefined templates.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/munichmakerlab/mqtt_labelmaker.git"
+  },
+  "main": "src/index.js",
+  "author": "Tim Bodeit",
+  "license": "ISC",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "bitly": "^7.1.0",
+    "exec-async": "^2.2.0",
+    "mqtt": "^4.1.0",
+    "pdfmake": "git+https://github.com/timbodeit/pdfmake.git#fluentfit",
+    "tmp": "^0.2.1"
+  }
+}

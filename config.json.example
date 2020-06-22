@@ -1,0 +1,14 @@
+{
+    "credentials": {
+        "host": "mqtt.your-server.com",
+        "port": 8883,
+        "protocol": "mqtts",
+        "username": "your_username",
+        "password": "your_strong_password"
+    },
+    "base_topic": "some/topic/path/",
+    "printer": "Some_Printer_Name",
+    "printer_options": [
+        "SomeOption=Value"
+    ]
+}
