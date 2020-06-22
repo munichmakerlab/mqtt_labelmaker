@@ -35,7 +35,7 @@ async function makeLabel(content, template, dry_run=false) {
             args.push('-d');
             args.push(config.printer);
         }
-        for (opt in config.printer_options) {
+        for (let opt of config.printer_options) {
             args.push('-o');
             args.push(opt);
         }
