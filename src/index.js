@@ -59,7 +59,8 @@ client.on("message", function (topic, payload) {
     }
     let template = require('../templates/'+name);
     if (template) {
-        makeLabel(JSON.parse(payload), template);
+        makeLabel(JSON.parse(payload), template)
+            .catch(console.error);
     } else {
         console.error("Label requested for unknown template '"+name+"'");
     }
