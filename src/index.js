@@ -32,7 +32,7 @@ async function makeLabel(content, template, dry_run=false) {
     if (!dry_run) {
         var args = [tmppdf];
         if (config.printer) {
-            args += ['-d', printer];
+            args += ['-d', config.printer];
         }
         for (opt in config.printer_options) {
             args += ['-o', opt];
