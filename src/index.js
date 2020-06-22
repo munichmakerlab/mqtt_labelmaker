@@ -6,7 +6,7 @@ const fs = require('fs');
 const { exit } = require('process');
 
 const config = require('../config.json');
-var fonts = require('../templates/fonts') || require('./default_fonts');
+var fonts = require('./default_fonts');
 var pdf = new PdfPrinter(fonts);
 
 if (!config.base_topic) {
