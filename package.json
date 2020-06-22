@@ -16,6 +16,7 @@
     "bitly": "^7.1.0",
     "exec-async": "^2.2.0",
     "mqtt": "^4.1.0",
+    "optional-require": "^1.0.0",
     "pdfmake": "git+https://github.com/timbodeit/pdfmake.git#fluentfit",
     "tmp": "^0.2.1"
   }

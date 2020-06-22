@@ -4,6 +4,7 @@ const mqtt = require('mqtt')
 const PdfPrinter = require('pdfmake');
 const fs = require('fs');
 const { exit } = require('process');
+const optionalRequire = require("optional-require")(require);
 
 const config = require('../config.json');
 var fonts = require('./default_fonts');
@@ -57,7 +58,7 @@ client.on("message", function (topic, payload) {
         console.error("Label requested for invalid template name 'fonts'");
         return;
     }
-    let template = require('../templates/'+name);
+    let template = optionalRequire('../templates/'+name);
     if (template) {
         makeLabel(JSON.parse(payload), template)
             .catch(console.error);
